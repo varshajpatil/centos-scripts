@@ -27,3 +27,5 @@ sudo service iptables save
 sudo systemctl restart iptables
 
 
+sudo yum install certbot-nginx -y
+sudo yum install wget -y
