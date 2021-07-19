@@ -29,3 +29,4 @@ sudo systemctl restart iptables
 
 sudo yum install certbot-nginx -y
 sudo yum install wget -y
+sudo yum install tmux -y
