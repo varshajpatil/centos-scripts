@@ -12,3 +12,7 @@ sudo systemctl enable php72-php-fpm.service
 sudo systemctl status php72-php-fpm.service
 sudo systemctl start php72-php-fpm.service
 sudo systemctl status php72-php-fpm.service
+sudo sed -i 's/user = apache/user = nginx/p' /etc/opt/remi/php72/php-fpm.d/www.conf
+sudo sed -i 's/group = apache/group = nginx/p' /etc/opt/remi/php72/php-fpm.d/www.conf
+sudo systemctl reload php72-php-fpm.service
+sudo systemctl status php72-php-fpm.service
