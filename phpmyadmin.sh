@@ -9,5 +9,5 @@ cd /var/lib/
 ##sudo chown -R user:user nginx/
 ##sudo chown -R root:user session/
 cd /var/opt/remi/php72/lib/php
-sudo chown -R craft:craft session/
+sudo chown -R user:user session/
 sudo systemctl reload php72-php-fpm.service
