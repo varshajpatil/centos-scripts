@@ -1,9 +1,9 @@
 #!/bin/bash
 sudo yum -y install epel-release
-sudo yum-config-manager --enable remi-php72
+sudo yum-config-manager --enable remi-php72 
 sudo yum install php -y
 php -v
-sudo yum install http://rpms.remirepo.net/enterprise/remi-release-7.rpm
+sudo yum -y install http://rpms.remirepo.net/enterprise/remi-release-7.rpm  
 sudo yum install yum-utils -y
 sudo yum-config-manager --enable remi-php72
 sudo yum install php72 -y
